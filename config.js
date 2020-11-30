@@ -350,4 +350,12 @@ config.enableSwaggerHttps = false
  */
 config.swaggerHost = undefined
 
+/**
+ * Set logger options as per https://github.com/fistlabs/loggin#loggin-
+ * Options set here will override logger config options below
+ *
+ * @type {Object}
+ */
+config.loggerOptions = {}
+
 module.exports = config

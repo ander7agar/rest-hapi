@@ -152,6 +152,7 @@ function getLogger(label) {
   extend(true, config, module.exports.config)
 
   const rootLogger = logging.getLogger(chalk.gray(label))
+  rootLogger.conf(config.loggerOptions)
 
   rootLogger.logLevel = config.loglevel
 
